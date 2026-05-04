@@ -1,0 +1,11 @@
+<div class="row" *ngIf="mobileArr.length > 0; else nomobile">
+
+  <div class="col-md-4 mb-4" *ngFor="let mobile of mobileArr">
+    <app-mobile-card [getdata]="mobile"></app-mobile-card>
+  </div>
+
+</div>
+
+<ng-template #nomobile>
+  <p class="alert alert-info">No posts</p>
+</ng-template>
