@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row" *ngIf="photosArr.length>0;else nophoto">
+    <div class="col-md-4 mb-4" *ngFor="let photo of photosArr">
+    <app-photo-card [photoObj]="photo"></app-photo-card>
+    </div>
+</div>
+</div>
+
+<ng-template #nophoto>
+<p class="alert alert-danger">no photo added yet!!!!!!</p>
+</ng-template>

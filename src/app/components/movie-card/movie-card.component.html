@@ -1,0 +1,36 @@
+<div class="card h-100 shadow-sm border-0 movie-card">
+
+    <!-- IMAGE -->
+    <img [src]="movieObj.image" [alt]="movieObj.title" class="card-img-top movie-img">
+
+    <div class="card-body d-flex flex-column">
+
+        <!-- GENRE -->
+        <h5 class="fw-bold">
+            {{ movieObj.genre }}
+        </h5>
+
+        <!-- TITLE -->
+        <p class="text-muted mb-2">
+            {{ movieObj.title }}
+        </p>
+
+        <!-- YEAR -->
+        <small class="mb-3">
+            Year: {{ movieObj.releaseYear }}
+        </small>
+
+        <!-- BUTTONS -->
+        <div class="mt-auto d-flex justify-content-between gap-2">
+            <button class="btn btn-sm btn-primary w-50">
+                EDIT
+            </button>
+
+            <button class="btn btn-sm btn-danger w-50">
+                DELETE
+            </button>
+        </div>
+
+    </div>
+
+</div>

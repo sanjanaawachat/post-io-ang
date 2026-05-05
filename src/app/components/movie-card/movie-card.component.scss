@@ -1,0 +1,74 @@
+/* Card Styling */
+.movie-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.movie-img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .movie-img {
+  transform: scale(1.05);
+}
+
+/* Text Styling */
+.movie-card h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.movie-card small {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* Buttons */
+.movie-card .btn {
+  border-radius: 6px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+/* Edit Button */
+.movie-card .btn-primary {
+  background-color: #2563eb;
+  border: none;
+}
+
+.movie-card .btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Delete Button */
+.movie-card .btn-danger {
+  background-color: #dc2626;
+  border: none;
+}
+
+.movie-card .btn-danger:hover {
+  background-color: #b91c1c;
+}
+
+/* Responsive Fix */
+@media (max-width: 576px) {
+  .movie-img {
+    height: 180px;
+  }
+}
